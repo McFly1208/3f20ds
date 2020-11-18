@@ -1,8 +1,8 @@
 function print(){
     
     let names = [];
-    let randomNames = new Set();
-
+    let randomNames = new Map();
+    let n = 1;
     for (let i = 1; i < 11; i++) {
         
         names[i-1] = 'name'+i;
@@ -15,8 +15,8 @@ function print(){
             let t = names[i]
             names[i] = names[j]
             names[j] = t
-            randomNames.add(names[i]);
-
+            randomNames.set(n,names[i]);
+            n++;
           }       
 
             console.log(randomNames);
