@@ -3,10 +3,23 @@
 // no leer datos, ie usar constantes x=3
 // Array de números triangulares
 
-const {
-  genNumerosTriangulares
-} = require('../utils/triangular');
-const x = 10;
+let n = 10, antes;
+let nuev = [];
 
-const triangulares = genNumerosTriangulares(x);
-triangulares.forEach(el => console.log(el));
+for(let j = 1; j <= n; j++){
+    triangular(j);
+}
+console.log(nuev);
+
+function triangular(cont){
+    for(let i = cont; i <= n; i++){
+        if(i === 1){
+            antes = '1';
+            nuev[i-1] = '1';
+            return '1';
+        }  
+            nuev[i-1] = antes.concat(i);
+            antes = nuev[i-1];
+            return;
+    }
+}
