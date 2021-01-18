@@ -1,4 +1,4 @@
-let string = 'holaaloh';
+let string = 'Hellothere';
 
 console.log(palindromo(string));
 
