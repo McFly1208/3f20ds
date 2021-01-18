@@ -34,7 +34,7 @@ class CircularLinkedList {
 }
 
 const linkedList = new CircularLinkedList;  
-linkedList.add("Skate");     
-linkedList.add('COD');     
-linkedList.add('Fortnite');    
+linkedList.add("Patineta");     
+linkedList.add('Fifa15');     
+linkedList.add('Fifa14');    
 console.log(linkedList);   
